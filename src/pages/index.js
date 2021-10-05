@@ -9,6 +9,15 @@ const StyledMainContainer = styled.main`
 
 const IndexPage = ({ location }) => (
   <Layout location={location}>
+    <noscript>
+      <iframe
+        title="gtag"
+        src="https://www.googletagmanager.com/ns.html?id=GTM-TRHVH5B"
+        height="0"
+        width="0"
+        style="display:none;visibility:hidden"
+      />
+    </noscript>
     <StyledMainContainer className="fillHeight">
       <Hero />
       <About />

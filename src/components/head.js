@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Helmet } from 'react-helmet';
 import { useLocation } from '@reach/router';
 import { useStaticQuery, graphql } from 'gatsby';
-
+import TagManager from 'react-gtm-module';
 // https://www.gatsbyjs.com/docs/add-seo-component/
 
 const Head = ({ title, description, image }) => {
@@ -39,6 +39,12 @@ const Head = ({ title, description, image }) => {
     image: `${siteUrl}${image || defaultImage}`,
     url: `${siteUrl}${pathname}`,
   };
+
+  const tagManagerArgs = {
+    gtmId: 'GTM-TRHVH5B',
+  };
+
+  TagManager.initialize(tagManagerArgs);
 
   return (
     <Helmet title={title} defaultTitle={seo.title} titleTemplate={`%s | ${defaultTitle}`}>
