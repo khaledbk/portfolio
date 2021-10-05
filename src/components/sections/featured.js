@@ -4,7 +4,7 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import styled from 'styled-components';
 import sr from '@utils/sr';
 import { srConfig } from '@config';
-import { Icon } from '@components/icons';
+//import { Icon } from '@components/icons';
 import { usePrefersReducedMotion } from '@hooks';
 
 const StyledProjectsGrid = styled.ul`
@@ -320,9 +320,7 @@ const Featured = () => {
                 }
               }
               tech
-              github
               external
-              cta
             }
             html
           }
@@ -355,7 +353,7 @@ const Featured = () => {
         {featuredProjects &&
           featuredProjects.map(({ node }, i) => {
             const { frontmatter, html } = node;
-            const { external, title, tech, github, cover, cta } = frontmatter;
+            const { external, title, tech, github, cover } = frontmatter;
             const image = getImage(cover);
 
             return (
@@ -381,7 +379,7 @@ const Featured = () => {
                       </ul>
                     )}
 
-                    <div className="project-links">
+                    {/*<div className="project-links">
                       {cta && (
                         <a href={cta} aria-label="Course Link" className="cta">
                           Learn More
@@ -397,7 +395,7 @@ const Featured = () => {
                           <Icon name="External" />
                         </a>
                       )}
-                    </div>
+                    </div>*/}
                   </div>
                 </div>
 

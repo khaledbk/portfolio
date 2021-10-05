@@ -3,12 +3,12 @@ module.exports = {
 
   socialMedia: [
     {
-      name: 'GitHub',
-      url: 'https://github.com/khaledbk',
+      name: 'Gitlab',
+      url: 'https://gitlab.com/khaledbk',
     },
     {
-      name: 'Instagram',
-      url: 'https://www.instagram.com/khaledbenk',
+      name: 'GitHub',
+      url: 'https://github.com/khaledbk',
     },
     {
       name: 'Twitter',
@@ -29,10 +29,10 @@ module.exports = {
       name: 'Experience',
       url: '/#jobs',
     },
-    // {
-    //   name: 'Work',
-    //   url: '/#projects',
-    // },
+    {
+      name: 'Work',
+      url: '/#projects',
+    },
     {
       name: 'Contact',
       url: '/#contact',
